@@ -1,0 +1,1 @@
+from Edaraxt.wsgi import application

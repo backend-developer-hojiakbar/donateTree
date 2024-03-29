@@ -1,0 +1,70 @@
+.text{
+    padding: 10px;
+    background-color:lightgreen;
+    text-align: center;
+}
+.form-control{
+    border-radius: 20px;
+
+}
+.button1{
+    border-radius: 30px;
+    background-color: limegreen;
+}
+.div1
+{
+    border: 2px solid rgb(237, 236, 236) ;
+    border-radius: 5px ;
+}
+.text1 {
+    padding: 10px;
+    text-align: center;
+}
+.all-items {
+    background-color: #65d693;
+}
+.button2{
+    border: 2px solid rgb(215, 214, 214);
+    border-radius: 5px;
+}
+.div2 {
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+.left-box {
+    border-radius: 8px;
+    background-color: aliceblue;
+    width: 530px;
+    
+}
+
+
+.sapn_item1 {
+    margin-left: 200px;
+}
+.text2 {
+    text-align: start;
+}
+.text3{
+    text-align: left;
+}
+.sertfikat-name {
+    text-align: left;
+    font-weight: 500;
+    color: black;
+}
+.sertfikat-body {
+    text-align: left;
+    font-weight: 200;
+    color:black;
+}
+.loc {
+    margin-right: 65%;
+}
+.text5 {
+    padding: 10px;
+    text-align: center;
+}
+.second-page {
+    padding: 30px;
+}

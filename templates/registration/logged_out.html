@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <img src="{% static 'imgs/ITACРесурс 4 1.png' %}" alt="">
+                <h3>ITAC-2024</h3>
+            </div>
+            <div class="navbar-links">
+                <ul class="list-unstyled">
+                    <li><a href="#!">Home</a></li>
+                    <li><a href="#!">Speaker</a></li>
+                    <li><a href="#!">Agenda</a></li>
+                    <li><a href="#!">Sections</a></li>
+                    <li><a href="#!">Submission</a></li>
+                    <li><a href="#!">Venue</a></li>
+                    <li><a href="#!">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-icons">
+                <img src="{% static 'imgs/Telegram App.jpg' %}" alt="">
+                <img src="./imgs/Instagram.jpg" alt="">
+                <img src="./imgs/Facebook.jpg" alt="">
+            </div>
+            <button>Register</button>
+            <div class="navbar-pasi">
+            <h2>1st International</h2>
+            <p>Conference on Innovative Technologies in Agri-food Chain: Problems and Perspectives (ITAC-2024)</p>
+            <h4>February 5-6, 2024</h4>
+            <h5>Tashkent State Technical University, Tashkent, Uzbekistan</h5>
+        </div>
+        </div>
+    </div>
+    <h2>Log Out</h2>
+    <p>Siz vebsaytdan chiqdingiz. <a href="{% url 'login' %}">Qaytadan kirish</a></p>
+    <div class="footer">
+        <div class="navbar-content">
+            <img src="./imgs/ITACРесурс 4 1.png" alt="">
+            <h3>ITAC-2024</h3>
+        </div>
+        <div class="navbar-links">
+            <ul class="list-unstyled">
+                <li><a href="#!">Home</a></li>
+                <li><a href="#!">Speaker</a></li>
+                 <li><a href="#!">Agenda</a></li>
+                <li><a href="#!">Sections</a></li>
+                <li><a href="#!">Submission</a></li>
+                <li><a href="#!">Venue</a></li>
+                <li><a href="#!">Contact Us</a></li>
+            </ul>
+        </div>
+            <div class="navbar-icons">
+            <img src="./imgs/Telegram App.jpg" alt="">
+            <img src="./imgs/Instagram.jpg" alt="">
+            <img src="./imgs/Facebook.jpg" alt="">
+         </div>
+            <h6>Copyright ITAC - 2023</h6>
+    </div>
+</body>
+</html>

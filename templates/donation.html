@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+   .donation-back-color {
+      background-color: white;
+     }
+     .form-control1 {
+         margin-left: 0px;
+         }
+</style>
+         <!--Inner Header Start-->
+<section class="wf100 p100 inner-header-tosh" style="background-color:white">
+   <div class="container">
+      <h1>Xayriya qilish</h1>
+   </div>
+</section>
+
+<section class="wf100 p80 donation-back-color">
+   <div class="container ">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="donations">
+               <h4>Xayriya Summasi</h4>
+               <ul class="radio-boxes">
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d1" type="radio" class="css-radio">
+                        <label for="d1" style="width:110px;"  class="css-label">60 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d2" type="radio" class="css-radio">
+                        <label for="d2" style="width:110px;" class="css-label">240 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d3" type="radio" class="css-radio">
+                        <label for="d3" style="width:110px;" class="css-label">600 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d4" type="radio" class="css-radio">
+                        <label for="d4" style="width:130px;" class="css-label">1 200 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d5" type="radio" class="css-radio">
+                        <label for="d5" style="width:130px;" class="css-label">3 000 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d6" type="radio" class="css-radio">
+                        <label for="d6" style="width:130px;" class="css-label">6 000 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="radio custom">
+                        <input name="donation" id="d7" type="radio" class="css-radio">
+                        <label for="d7" style="width:150px;" class="css-label">12 000 000</label>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="inputs">
+                        <input class="enter" type="text" placeholder="$ Boshqa">
+                     </div>
+                  </li>
+               </ul>
+
+               <div class="payment-method wf100">
+                      <ul>
+                     <li class="half pr15">
+                        <h4>To'lov turi <span>To'lov turini tanlang</span></h4>
+                        <ul class="dtime">
+                           <li>
+                              <!--<div class="form-check form-check-inline">-->
+                                 <!--<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option2">-->
+                                 <!--<label class="form-check-label" for="inlineCheckbox1"></label>-->
+                              <!--</div>-->
+                              <!--<div class="form-check form-check-inline">-->
+                                 <!--<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">-->
+                                 <!--<label class="form-check-label" for="inlineCheckbox2">Offline Payment</label>-->
+                              <!--</div>-->
+                           </li>
+                        </ul>
+                        <select class="form-control form-control1" style="margin-top:57px;">
+                           <option>Click to'lov tizimi</option>
+                           <!--<option>Payme to'lov tizimi</option>-->
+                           <!--<option>Uzum to'lov tizimi</option>-->
+                        </select>
+                     </li>
+                     <li class="half pl15">
+                        <h4>Loyiha va proyektlar</h4>
+                        <p>O'z hissangizni qo'shmoqchi bo'lgan loyihani tanlang</p>
+                        <select class="form-control form-control1 ">
+                           <option>Orolga yordam</option>
+                           <option>Plastiklardan tozalash</option>
+                           <option>Chorvoq suv omborini tozalash</option>
+                        </select>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="your-comments wf100">
+                  <h4>Izoh kiriting</h4>
+                  <textarea class="form-control form-control1" placeholder="Fikringizni bildiring"></textarea>
+               </div>
+               <div class="wf100 donator-details">
+                   <input value="Xayriya qilish" type="submit">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock content %}

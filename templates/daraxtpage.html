@@ -1,0 +1,209 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="text pt-4 pb-2">
+      <h3> <b>Bu daraxtlar ekib bo'lingan</b> </h3>
+      <p>Tugmani pastga tushiring va ko'proq o'rganing ekilgan daraxtlar haqida</p>
+        </div>
+        <div class="planned">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col-1">
+                    <img srcset="https://tree-nation.com/thumbs/45x45/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg 1x, https://tree-nation.com/thumbs/90x90/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg 2x" alt="" class="img-fluid rounded-circle" lazy="loaded" src="https://tree-nation.com/thumbs/45x45/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg">
+                  </div>
+                  <div class="col-2">
+                    <p>2 <i class="fa-brands fa-pagelines"></i> <span style="color: green;">Mamma</span> uchun ekilgan 18 Jul 2023 </p>
+                  </div>
+                  <div class="col-7">
+                  </div>
+                  <div class="col-1">
+                    <button type="button" class="btn btn-primary position-relative m-0"><i class="fa-regular fa-heart"></i> 5 </button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="text-center">
+          <div class="row">
+            <div class="col-8">
+              <img style="width: 80%; height: 650px;" src="{% static 'rasm/chinor.jpg' %}" alt="daraxt rasmi bor"> <br> <br>
+              <p style="text-decoration: none;text-align: start;">whit love <a href="">#Mobili Trees</a></p>
+            </div>
+            <div class="col-4">
+              <div class="div1" style="text-align: left;">
+                <h6> 1 comments </h6>
+                <div style="display: inline-block; ">
+                  <p><img srcset="https://tree-nation.com/thumbs/45x45/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg 1x, https://tree-nation.com/thumbs/90x90/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg 2x" alt="" class="img-fluid rounded-circle" lazy="loaded" src="https://tree-nation.com/thumbs/45x45/https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile.jpg">
+                   Mamma - 6 kun oldin <br> Baraka toping shunday homiyliklar uchun </p> <br>
+                </div>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">😊</span>
+                    <input type="text" class="form-control" placeholder=" Xabar yozish" aria-label="Username" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-success button1"><i class="fa-solid fa-paper-plane"></i></button>
+                  </div>
+              </div>
+             <div style="margin-top: 50px;" class="div1">
+                  <h4> Bu daraxtlarini ekish uchun homiylik qilgani uchun rahmat ... <br> <br><br>
+                  <i class="fa-solid fa-person"></i> Nasriddinov Musojonga</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="all-items">
+        <div class="container text-center">
+          <div class="second-page">
+            <div class="row">
+              <div class="col-1">
+                <img src="{% static 'images/tree.jpg' %}" alt="">
+              </div>
+              <div class="col-10 text1">
+                <h3>Ekilgan daraxtlar haqida to'liq malumot</h3>
+              </div>
+              <div class="col-1">
+                <img src="{% static 'images/tree.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="container text-center mt-2">
+            <div class="row">
+              <div class="col-6 div2">
+                <h3>Sharq chinori(Platanus  orientalis)</h3> <br>
+                <img src="{% static 'rasm/tree-nation-logo-icon.svg' %}" alt="logo of tree nation"> <br>
+                <img style="width: 500px;height: 400px;margin-top: 20px;" src="{% static 'rasm/chinor.jpg' %}" alt="image of tree"> <br>
+                <h4 style="text-align: start;">Tafsilotlar: </h4>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-2">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Fabaceae</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Barglari doim yashil</label>
+                    </div>
+                    <div class="col-2">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Mahalliy</label>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                  </div>
+                </div>
+                <h4 style="text-align: start;">Foydalaniladi: </h4>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col-3">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Vitaminlar</label>
+                    </div>
+                    <div class="col-1">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Tanin</label>
+                    </div>
+                    <div class="col-3">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Yoqilg'iisi</label>
+                    </div>
+                    <div class="col-4">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Qurilish uchun yo'goch</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="container text-center">
+                  <div class="row" style="margin-top: 10px;">
+                    <div class="col-3">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Elyaf va arqon</label>
+                    </div>
+                    <div class="col-3">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Qatron va saqich</label>
+                    </div>
+                    <div class="col-5">
+                      <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+                      <label class="button2" for="btn-check">Milliy tabobat</label>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <table class="table">
+                  <tr>
+                    <th rowspan="1">Yil bo'yi CO2 tozalaydi</th>
+                    <td>14.6 tonna ❗ </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1">Sutkasiga CO2 tozalashi</th>
+                    <td> 40 kg </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1">CO2 tozalash davri</th>
+                    <td> 0 - 20 yil </td>
+                  </tr>
+                  <tr>
+                    <th rowspan="1">O'rtacha hayot davomligi</th>
+                    <td> 50 yil </td>
+                  </tr>
+                </table>
+                <h4 class="text2">Ekuvchi bu haqda nimani yoqtiradi </h4>
+                <p class="text2">Neem daraxtlari suahili tilida Muarubaini nomi bilan tanilgan, ya'ni - 40 ta qo'llaniladigan daraxt - Bu shunday deyiladi, chunki u 40 xil kasalliklarni davolaydi. U ayniqsa qurg'oqchilikka chidamli bo'lib, o'ta quruq davrlarda barglarini yo'qotishi va yomg'ir yog'ishi bilan ularni yana o'sishi mumkin bo'lgan moslashuvga ega. Neem juda qurg'oqchilikka chidamli tur bo'lib, Boredagi jamoa tomonidan turli dorivor maqsadlarda foydalaniladi. U pishirish yoqilg'isi sifatida ham qadrlanadi va u shu tarzda ishlatilganda, fermerlar mavjud tabiiy tropik o'rmonlarini kesishlari shart emas. Agar bizning maqsadimiz tropik o'rmonlarni kesishni sekinlashtirish bo'lsa, bu hududda neem o'sadigan eng yaxshi daraxt turidir.
+
+                  <h4 class="text2">Turlarning o'ziga xos xususiyatlari </h4>
+                <p class="text2">Sharq chinori (Platanus  orientalis) 150-200ming <br>
+                  Yashash muddati - 1500-2000 yil. <br>
+                  Tuproq turlariga mosligi – och va toʼq tusli boʼz tuproqlarda yaxshi oʼsadi. Tuproqning yer ostki (grunt) suvlariga chidamsiz. <br>
+                  Sovuqqa chidamliligi – qish oylarining – 25-30 *C havo haroratiga chidamli. <br>
+                  Issiqqa chidamliligi – +40+45*C haroratga chidamli <br>
+                  Ekish uchun tavsiya etiladigan hududlar – Qashqadaryo, Surxondaryo, Samarqand, Jizzax, Toshkent, Namangan, Fargʼona, Аndijon viloyatlari.</p>
+              </div>
+
+              <div class="col-6">
+                <div class="left-box">
+                  <h4 class="text5"> Daraxtning joylashgan o'rni </h4> <br>
+                  <iframe style="width: 450px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47964.72324241854!2d69.63123969606494!3d41.29156144668005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae55e52a25ea97%3A0xe2f2cecf5ed1c001!2zWW9zaGxhciBib2figJhp!5e0!3m2!1sen!2s!4v1690290648928!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div style="margin-top: 10px;" class="left-box">
+                  <h4 class="text5"> Daraxtlarni ekish loyihasi</h4>
+                  <div class="text-center">
+                    <div class="row">
+                      <div class="col-5">
+                        <img style="width: 200px; height: 250px;margin-top: 90px;" src="{% static 'rasm/ish-jarayoni.jpg' %}" alt="">
+                      </div>
+                      <div class="col-7">
+                          <h5 class="text3" >Usambara bioxilma-xilligini saqlash, Tanzaniya</h5> <br>
+                          <div class="loc">
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                            <i class="fa-solid fa-star "></i>
+                          </div>
+                        <p class="text3">Koʼchatlarini ekish agrotexnikasi: Koʼchatlar asosan erta bahorda (mart) ekiladi. Koʼchatlar <br> ekishdan oldin loy quyqasiga botirib <br> olinadi. Yoʼl boʼylarini koʼkalamzorlashtirish, guruh tarzida ekish va madaniy oʼrmonlarini barpo etishda 1,0-1,5 m, aholi gavjum hududlarda 2,0-2,5 m li koʼchatlardan foydalaniladi. Birinchi yili koʼchatlar 10-12 marotabagacha sugʼoriladi, tuproqlar 3-4 marotaba yumshatiladi. Koʼchatlarning tez rivojlanishi uchun ikkinchi yildan boshlab mineral oʼgʼitlar (mart, sugʼoriladigan sharoitda 50 g ammiakli selitra) bilan oziqlantirish tavsiya etiladi.</p>s
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="left-box mt-2 mb-5">
+                  <div class="row">
+                    <div class="col-3" style="margin-top: 4px;">
+                      <a href="{% static 'files/certificate-5fbfd602a8c20.pdf' %}"> <img src="{% static 'rasm/sertifikat.svg' %}" alt=""> </a>
+                    </div>
+                    <div class="col-8">
+                      <a href="{% static 'files/certificate-5fbfd602a8c20.pdf' %}" style="text-decoration: none;">
+                      <p class="sertfikat-name">Ushbu sertifikat faqat uning  egasi uchun mavjud </p>
+                      <p class="sertfikat-body">Sertifikat raqami: 4923417</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+{% endblock %}

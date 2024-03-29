@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+         <!--Inner Header Start-->
+ <section class="wf100 p100 inner-header-tosh" style="margin-bottom: 40px;">
+    <div class="container">
+       <h1 class="text-center">Toshkent shahri uchun ekilishi mumkin bo'lgan daraxtlar ro'yxati</h1>
+    </div>
+ </section>
+
+ <div class="container">
+    <div class="container text-center" style="margin-top: 20px;">
+        <div class="row">
+          <div class="col size">
+            <img  src="{% static 'images/iconka_to_home1.png' %}" alt="">
+            <button class="btn btn-default filter-button" data-filter="yaproqli">Yaproq bargli daraxtlar</button>
+          </div>
+
+          <div class="col size">
+            <!-- <a href="" class="filter-button" data-filter="manzarali"> -->
+            <img  src="{% static 'images/iconka_to_home2.png' %}" alt="">
+            <button class="btn btn-default filter-button" data-filter="manzarali">Manzarali butalar</button>
+          <!-- </a> -->
+          </div>
+          <div class="col size">
+             <img  src="{% static 'images/iconka_to_home3.png' %}" alt="">
+             <button class="btn btn-default filter-button" data-filter="mevali">Mevali daraxtlar</button>
+           </div>
+           <div class="col size">
+             <img  src="{% static 'images/iconka_to_home4.png' %}" alt="">
+             <button class="btn btn-default filter-button" data-filter="ninabargli">Manzarali ninabargli daraxtlari</button>
+           </div>
+        </div>
+    </div>
+
+ <!--Inner Header End-->
+ <!--Contact Start-->
+
+ <div class="container text-center">
+    <div class="row">
+
+     <div class="col-md-9">
+       <section class="shop wf100 p80">
+          <div class="container">
+             <div class="row">
+                 {% for tree in treesList%}
+                 <hr>
+                <div class="container text-center filter yaproqli">
+                   <div class="row">
+                     <div class="col-3">
+                      <a href="{% url 'tree-detail' tree.pk %}" style="text-decoration: none;">
+                       <img style="width: 250px;height: 270px;" src="{{tree.image.url}}" alt="">
+                       </a>
+                     </div>
+                     <div class="col-6 yozuv">
+                      <a href="{% url 'tree-detail' tree.pk %}" style="text-decoration: none;">
+                       <h2 style="color: green;">{{tree.name}} </h2>
+                      </a>
+                       <p class="p-text"> <b>Lotincha nomi:</b> {{tree.nameLotin}}</p>
+                       <p class="p-text"> <b> Balandligi/m:</b> {{tree.height}}</p>
+                       <p class="p-text"><b> Kengligi/m:</b>  {{tree.wide}}</p>
+                       <p class="p-text"><b> O'sishi:</b>{{tree.growing}}</p>
+                       <p class="p-text"><b> Gullari:</b> {{tree.flowers}}</p>
+                       <p class="p-text"><b> Mevasi:</b>  {{tree.fruits}}</p>
+                     </div>
+                     <div class="col-3 yozuv-1">
+                       <h4 style="color: green;">{{tree.cost}} so'm </h4>
+                       <div>
+                           <a href="{% url 'tree-detail' tree.pk %}">
+                               <button  style="height: 40px;" type="submit" class="btn btn-success mt-3"><i class="fa-solid fa-circle-info"></i> To'liq malumot </button>  </a>
+                       </div>
+
+                     </div>
+                   </div>
+                 </div>
+                 {% endfor %}
+
+                </div>
+             </div>
+             <!--<div class="row">-->
+             <!--   <div class="col-md-12">-->
+             <!--      <div class="gt-pagination">-->
+             <!--         <nav>-->
+             <!--            <ul class="pagination">-->
+             <!--               <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"> <i class="fas fa-angle-left"></i> </a> </li>-->
+             <!--               <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+             <!--               <li class="page-item active"><a class="page-link" href="#">2</a></li>-->
+             <!--               <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+             <!--               <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <i class="fas fa-angle-right"></i> </a> </li>-->
+             <!--            </ul>-->
+             <!--         </nav>-->
+             <!--      </div>-->
+             <!--   </div>-->
+             <!--</div>-->
+        </section>
+     </div>
+    </div>
+  </div>
+{% endblock content %}

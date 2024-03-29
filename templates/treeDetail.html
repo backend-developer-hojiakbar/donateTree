@@ -1,0 +1,289 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<style>
+.back-color-section {
+    background-color: white;
+}
+.onclick-img {
+
+}
+.onclick-input {
+    width: 90px;
+}
+</style>
+         <!--Header End-->
+         <!--Inner Header Start-->
+         <section class="wf100 p100 inner-header-tosh" style="background-color:white">
+            <div class="container" style="margin-top:-100px;">
+            </div>
+         </section>
+         <!--Inner Header End-->
+         <!--Blog Start-->
+         <section class="wf100 p80 shop back-color-section ">
+            <div class="product-details">
+               <div class="container">
+                  <h2 class="text-primary mb-2" style="text-align: center; "> Daraxt haqida to'liq malumot</h2>
+                  <div class="row">
+                     <div class="col-md-4">
+                        <section class="gallery">
+                           {%if tree.image %}
+                           <div class="gallery__item">
+                             <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image.url}}" alt=""/>
+                             <label for="img-1" class="gallery__thumb"><img src="{{tree.image.url}}" alt=""/></label>
+                           </div>
+                           {% endif %}
+                           {%if tree.image1 %}
+                           <div class="gallery__item">
+                             <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image1.url}}" alt=""/>
+                             <label for="img-2" class="gallery__thumb"><img src="{{tree.image1.url}}" alt=""/></label>
+                           </div>
+                           {% endif %}
+                           {%if tree.image2 %}
+                           <div class="gallery__item">
+                             <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image2.url}}" alt=""/>
+                             <label for="img-3" class="gallery__thumb"><img src="{{tree.image2.url}}" alt=""/></label>
+                           </div>
+                           {% endif %}
+                           {% if tree.image3 %}
+                           <div class="gallery__item">
+                             <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+                             <img class="gallery__img" src="{{tree.image3.url}}" alt=""/>
+                             <label for="img-4" class="gallery__thumb"><img src="{{tree.image3.url}}" alt=""/></label>
+                           </div>
+                           {% endif %}
+                         </section>
+                     </div>
+                     <div class="col-md-5">
+                        <div class="product-text">
+                           <h4>{{tree.name}}</h4> <i>{{tree.nameLotin}} </i>
+                           <div class="pro-pricing"> <span id="price-cost">{{tree.cost}}</span> so'm </div>
+                           <p>{{tree.bio}}
+                           </p>
+                              <div class="form-group col-md-6" style="display: inline-block;">
+                                  <div style="margin-left:7px;">
+                                    <h5 style="margin-left:-23px;">Daraxtlar soni:</h5>
+                                    <div style="display: flex;width:200px;margin-right:0px;margin-left:-72px;">
+                                    <div style="margin-left: 50px;">
+                                        <div>
+                                            <i class="fa-solid fa-square-minus onclick-img" style="font-size:28px;" onclick="hisoblaminus()"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <input style="margin-left:20px;margin-right:20px" class="onclick-input" type="number" onchange="hisoblash()" row id="sonidaraxt" value="0"></input></div>
+                                        <div style="margin-right: 0px">
+                                            <div >
+                                                <i class="fa-solid fa-square-plus onclick-img" style="font-size:28px;" onclick="hisoblaplus()"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <form>
+                                 <h5>Necha yil parvarish qilish :</h5>
+                                <div class="form-check form-check-inline mt-2" style="font-size:18px">
+                                    <label  class="form-check-label" for="inlineRadio0">0</label>
+                                    <input onclick="ozgartir0()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio0" value="option0" checked>
+                                </div>
+                                 <div class="form-check form-check-inline" style="font-size:18px">
+                                    <label  class="form-check-label" for="inlineRadio1">1</label>
+                                    <input onclick="ozgartir1()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" >
+                                  </div>
+                                  <div class="form-check form-check-inline" style="font-size:18px">
+                                    <label  class="form-check-label" for="inlineRadio2">2</label>
+                                    <input onclick="ozgartir2()" class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                  </div>
+
+                                 <h5 id="narx" class="mt-2 mb-2">0 yillik (1 ta daraxt uchun) narxi -> 0 $</h5>
+                                 <div class="form-group">
+                                 </div>
+
+                               <button  style="height: 40px;" type="submit" class="btn btn-success mt-3">
+                                    <a style="text-decoration:none; color:black" href="{% url 'payment' %}"> Savatchaga qo'shish</a>
+                               </button>
+
+                               </form>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <h5>Ekiladigan hududlar</h5>
+                        <div class="product-text">
+                           <ul>
+                               {{regions}}
+                               {% for region in regions %}
+                                <li>{{region}}</li>
+                                {% endfor %}
+                                <!--<li>Bekobod shahri</li>-->
+                                <!--<li>Bo'ka tumani</li>-->
+                                <!--<li>Bo'stonliq tumani</li>-->
+                                <!--<li>Chinoz tumani</li>-->
+                                <!--<li>Chirchi tumani</li>-->
+                                <!--<li>O'rta chirchiq tumani</li>-->
+                                <!--<li>Ohangaron tumani</li>-->
+                           </ul>
+                        </div>
+                        <h5>Umumiy hisoblash: </h5>
+                        <p>Daraxtlar narxi:</p>
+                        <h6 id="totalCost">{{tree.cost}}</h6>
+                        <hr>
+                        <p>Parvarishlash narxi:</p>
+                        <h6 id="careCost"></h6>
+                        <hr>
+                        <p>Umumiy narxi:</p>
+                        <h6 id="allTotalCost"></h6>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="products-tabs wf100 p80">
+                           <nav>
+                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                 <a class="nav-item nav-link active" id="nav-one-tab" data-toggle="tab" href="#nav-one" role="tab" aria-controls="nav-one" aria-selected="true">Tavsifi</a>
+                                 <a class="nav-item nav-link" id="nav-two-tab" data-toggle="tab" href="#nav-two" role="tab" aria-controls="nav-two" aria-selected="true">Qo'shimcha malumotlar</a>
+                              </div>
+                           </nav>
+                           <div class="tab-content" id="nav-tabContent">
+                              <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab">
+                                 <table class="table">
+                                    <tr>
+                                      <th rowspan="1">Yil bo'yi CO2 tozalaydi</th>
+                                      <td>{{tree.cleanCO2Year}} /td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">Sutkasiga CO2 tozalashi</th>
+                                      <td> {{tree.cleanCO2Day}} </td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">CO2 tozalash davri</th>
+                                      <td> {{tree.cleanCO2Period}} </td>
+                                    </tr>
+                                    <tr>
+                                      <th rowspan="1">O'rtacha hayot davomligi</th>
+                                      <td> {{tree.averageLifeTime}} </td>
+                                    </tr>
+                                    <tr>
+                                       <th>Balandligi</th>
+                                       <td>{{tree.height}}</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Bargi o'lchami</th>
+                                       <td>{{tree.leaveSize}}</td>
+                                    </tr>
+                                    <tr>
+                                       <th>Diametri</th>
+                                       <td> {{tree.wide}}</td>
+                                    </tr>
+                                  </table>
+                               </div>
+                              <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab">
+                                 <p>{{ tree.additionBio }}</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <section class="online-shop wf100">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <h2>Aloqador daraxtlar</h2>
+                     </div>
+                  </div>
+                  <div class="row">
+                   <!--Pro Box Start-->
+                   {% for tree in treesList %}
+                  <div class="col-lg-3 col-sm-6">
+                     <div class="product-box">
+                        <div class="pro-thumb"> <a href="#">Batafsil</a>
+                           <img style="width: 100%; height: 380px;" src="{{tree.image.url}}" alt=""></div>
+                        <div class="pro-txt">
+                           <h6><a href="#">{{tree.name}}</a></h6>
+                           <p class="pro-price">{{tree.cost}}</p>
+                        </div>
+                     </div>
+                  </div>
+                     {% endfor %}
+                  </div>
+               </div>
+            </section>
+         </section>
+         <!--Blog End-->
+      </div>
+      <script>
+      let umumiy1 = 0, umumiy2 = 0, umumiy = 0;
+      function ozgartir0() {
+        document.getElementById("narx").innerHTML = "0 yillik (1 ta daraxt uchun) narxi -> 0 ";
+        soni = parseInt(document.getElementById('sonidaraxt').value);
+        treeCost = parseInt(document.getElementById('price-cost').innerText);
+        umumiy2 = soni * treeCost;
+        document.getElementById("totalCost").innerHTML = `${soni} X ${treeCost} = ${umumiy2}`;
+    }
+    function ozgartir1() {
+        let soni;
+        document.getElementById("narx").innerHTML = "1 yillik (1 ta daraxt uchun) narxi: 15 000";
+        soni = parseInt(document.getElementById('sonidaraxt').value);
+        umumiy1 = soni * 15000
+        document.getElementById("careCost").innerHTML = `${soni} X 15 000 = ${umumiy1}`;
+        umumiy = umumiy1 + umumiy2;
+        document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+
+    }
+    function ozgartir2() {
+        let soni;
+        document.getElementById("narx").innerHTML = "1 yillik (1 ta daraxt uchun) narxi: 25 000";
+        soni = parseInt(document.getElementById('sonidaraxt').value);
+        umumiy1 = soni * 25000 * 2
+        document.getElementById("careCost").innerHTML = `${soni} X 25 000 = ${umumiy2}`;
+        umumiy = umumiy1 + umumiy2;
+        document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+    }
+
+    function hisoblash() {
+        soni = parseInt(document.getElementById('sonidaraxt').value);
+        treeCost = parseInt(document.getElementById('price-cost').innerText);
+        umumiy2 = soni * treeCost;
+        document.getElementById("totalCost").innerHTML = `${soni} X ${treeCost} = ${umumiy2}`;
+        umumiy = umumiy1 + umumiy2;
+        document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+    }
+
+    function hisoblaplus() {
+        let soni, treeCost;
+        soni = parseInt(document.getElementById('sonidaraxt').value);
+        treeCost = parseInt(document.getElementById('price-cost').innerText);
+        document.getElementById("sonidaraxt").value = (soni += 5);
+        umumiy2 = soni * treeCost;
+        document.getElementById("totalCost").innerHTML = `${soni} X ${treeCost} = ${umumiy2}`;
+
+        umumiy = umumiy1 + umumiy2;
+        document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+    }
+    function hisoblaminus() {
+         let soni, treeCost;
+         soni = parseInt(document.getElementById('sonidaraxt').value);
+        if(soni >= 5 ){
+            treeCost = parseInt(document.getElementById('price-cost').innerText);
+            document.getElementById("sonidaraxt").value = (soni -= 5);
+            umumiy2 = soni * treeCost;
+            document.getElementById("totalCost").innerHTML = `${soni} X ${treeCost} = ${umumiy2}`;
+            umumiy = umumiy1 + umumiy2;
+            document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+        }else {
+            document.getElementById('sonidaraxt').value = "5"
+            treeCost = parseInt(document.getElementById('price-cost').innerText);
+            umumiy2 = soni * treeCost;
+            document.getElementById("totalCost").innerHTML = `${soni} X ${treeCost} = ${umumiy2}`;
+            umumiy = umumiy1 + umumiy2;
+            document.getElementById("allTotalCost").innerHTML = `${umumiy1} + ${umumiy2} = ${umumiy}`;
+            }
+
+        }
+
+    </script>
+{% endblock content %}

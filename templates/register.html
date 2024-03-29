@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+        .background-img-account {
+            background-image: url("https://treenation-uploads.s3.eu-central-1.amazonaws.com/default_profile_bg_47.jpg");
+            background-color: #cccccc;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 450px;
+        }
+        .card-item {
+            margin-top: 30px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        .card-item-img {
+            height: 300px;
+        }
+        .icon_back_img_item {
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 70px;
+        }
+        i , a {
+            color:white;
+        }
+        .back-img-title_def {
+            color:white;
+        }
+        .icon_back_img {
+            width:200px;
+            height:200px;
+            border-style: 2px solid;
+            border-color:white;
+            border:2px;
+            border-radius:200px;
+            margin-left:42%;
+            margin-top:30px;
+        }
+        .icon-of-account-back-img {
+            font-size:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-img-account ">
+        <img class="icon_back_img" src="https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-250nw-1714666150.jpg">
+        <div class="back-img-title-account text-center">
+            <h3 class="back-img-title_def">{{request.user}}</h3><h5 class="back-img-title_def"> o'rmoni</h5>
+        </div>
+        <div class="icon_back_img_item text-center">
+            <div class="row">
+              <div class="col">
+                <i class="fa-solid fa-tree icon-of-account-back-img">   4 </i>
+              </div>
+              <div class="col" >
+                <i class="fa-solid fa-cloud icon-of-account-back-img"> </i><span style="margin-left:5px;color:white;font-size:20px;">0.1 t </span> <span style="color:white;">CO2</span>
+              </div>
+              <div class="col">
+               <a><button class="btn btn-success">Ulashish</button></a>
+              </div>
+              <div class="col">
+                <a href="{% url 'logout' %}"><button class="btn btn-dark">Profildan chiqish</button></a>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-3" >
+          <div class="card card-item" style="width: 16rem;">
+            <img src="{% static 'images/rasm/1-tree.jpg' %} " class="card-item-img" alt="daraxt_rasmi">
+            <div class="card-body">
+              <p class="card-title">Daraxt nomi:<b> Shumtoli</b></p>
+              <p class="card-text">Ekilgan sanasi:<b>05.12.2023</b></p>
+              <p>Ekilgan manzili : <a style="text-decoration:none; color:black;" href="">Toshkent viloyati , Bo'stonliq tumani </a></p>
+            </div>
+          </div>
+          </div>
+          <div class="col-3" >
+          <div class="card card-item" style="width: 16rem;">
+            <img src="{% static 'images/rasm/2-tree.jpg' %} " class="card-item-img" alt="daraxt_rasmi">
+            <div class="card-body">
+              <p class="card-title">Daraxt nomi:<b>Oq terak</b> </p>
+              <p class="card-text">Ekilgan sanasi:<b>01.04.2023</b></p>
+              <p>Ekilgan manzili : <a style="text-decoration:none; color:black;" href="">Toshkent viloyati , Yunusobod tumani </a></p>
+            </div>
+          </div>
+          </div>
+          <div class="col-3">
+          <div class="card card-item" style="width: 16rem;">
+            <img src="{% static 'images/rasm/3-tree.jpg' %} " class="card-item-img" alt="daraxt_rasmi">
+            <div class="card-body">
+              <p class="card-title">Daraxt nomi:<b>Jiyda</b> </p>
+              <p class="card-text">Ekilgan sanasi:<b>08.04.2023</b></p>
+              <p>Ekilgan manzili : <a style="text-decoration:none; color:black;" href="">Toshkent viloyati , Chilonzor tumani </a></p>
+            </div>
+          </div>
+          </div>
+          <div class="col-3" >
+          <div class="card card-item" style="width: 16rem;">
+            <img src="{% static 'images/rasm/4-tree.jpg' %} " class="card-item-img" alt="daraxt_rasmi">
+            <div class="card-body">
+              <p class="card-title">Daraxt nomi:<b>Virgin archasi</b> </p>
+              <p class="card-text">Ekilgan sanasi:<b>05.12.2023</b></p>
+              <p>Ekilgan manzili : <a style="text-decoration:none; color:black;" href="">Farg'ona viloyati , Bag'dod tumani </a></p>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+{% endblock content %}

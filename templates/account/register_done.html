@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>{{ new_user.first_name }} tabriklaymiz ro'yxatdan muvaffaqiyatli ro'yxatdan o'tdingiz</h1>
+<p>Endi saytga <a href="{% url 'login' %}">login</a> qilishingiz mumkin</p>
+
+{% endblock content %}

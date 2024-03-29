@@ -1,0 +1,264 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <style>
+    .Asosiy-page{
+        display: flex;
+        margin-left: 780px;
+        }
+    .text-a{
+        color: white;
+        text-decoration: none;
+    }
+    .bajar-text{
+        margin-left: -48px;
+        margin-top: 1px;
+    }
+    .bajar-text1{
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+    .bajar-text2{
+        margin-top: -9px;
+        margin-left: -50px;
+    }
+    .bajar-text3{
+        margin-top: -7px;
+        margin-left: 3px;
+    }
+    .bajar-text4{
+        margin-top: -9px;
+        margin-left: -17px;
+    }
+    .bajar-text5{
+        margin-top: -7px;
+        margin-left: -93px;
+    }
+    .bajar-text6{
+        margin-top: -8px;
+        margin-left: -50px;
+    }
+    .bajar-text7{
+        margin-top: -9px;
+        margin-left: -100px;
+    }
+    .bajar-text8{
+        margin-top: -7px;
+        margin-left: -100px;
+    }
+    .bajar-text9{
+        margin-top: -8px;
+        margin-left: -55px;
+    }
+    .bajar-h5{
+        margin-top: 40px;
+    }
+    .muhokama{
+        display: flex;
+    }
+    .bajar2{
+        margin-left: 80px;
+    }
+    .text-p{
+        margin-left: -90px;
+        margin-top: 2px;
+    }
+    .text-p1{
+        margin-top: 40px;
+        margin-left: -80px;
+    }
+    .text-p2{
+        margin-top: -8px;
+        margin-left: -75px;
+    }
+    .text-p3{
+        margin-top: -8px;
+        margin-left: 2px;
+    }
+    .text-p4{
+        margin-top: -8px;
+        margin-left: -62px;
+    }
+    .manzl-h5{
+        margin-top: 40px;
+    }
+    .bttn{
+        width: 700px;
+        margin-left: 100px;
+        height: 32px;
+    }
+    .bttn1{
+        width: 300px;
+        height: 32px;
+        margin-left: -500px;
+    }
+    .text-1{
+        margin-left: 100px;
+        margin-top: 30px;
+    }
+    .href01{
+        color: #000;
+        text-decoration: none;
+    }
+    .text-h4{
+        color: red;
+    }
+    .text-maker > h1{
+        font-size: 15px;
+    }
+    .text-a1{
+        text-decoration: none;
+    }
+    .text-maker{
+        margin-left: 100px;
+    }
+    .text-h55{
+        margin-left: 100px;
+    }
+    .img1{
+        width: 80px;
+    }
+    .form-check{
+        margin-left: 100px;
+    }
+    .texth1{
+        font-size: 15px;
+     }
+     .container1{
+        border: 1px solid #e8d2a0;
+        width: 80%;
+        height: 150px;
+        background-color: #ebe9e6;
+        padding-top: 20px;
+        margin-top: 10px;
+        margin-left: 100px;
+        padding-left: 20px;
+     }
+     .img2{
+        width: 60px;
+     }
+     h6 {
+         text-align:left;
+     }
+    </style>
+</head>
+<body>
+    <section style="background-color:white;">
+    <div class="Asosiy-page mt-3">
+        <div class="Buttons1">
+            <button type="button" class="btn btn-primary"><a class="text-a" href="{% url 'home' %}">Bosh sahifaga qaytish</a></button>
+        </div>
+        <div class="Buttons2">
+            <button type="button" class="btn btn-warning"><a class="text-a" href="#">Hamma hisoblar</a></button>
+        </div>
+        <div class="Buttons3">
+            <button type="button" class="btn btn-success"><a class="text-a" href="#"><i class="fa-solid fa-download"></i>Hisobni yuklab olish</a></button>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <h3>10.02.2022 dagi ДХ-531-02/22 sonli Shartnomaga <br> 17.08.2023 dagi 295521 sonli TO'LOV HISOBI</h3>
+    </div>
+<div class="container d-flex mt-4">
+    <div class="row text-center">
+    <div class="col" style="width:1040px;">
+      <h6 style="text-align:left;"><b>Bajaruvchi:</b> <<'Yashil-Makon'>> MCHJ</h6>
+      <br>
+      <h6><b>Manzil: </b>Toshkent shahar, Olmachi ko'chasi, 25</h6>
+      <h6><b>Telfonlar: </b>(+998 78) 113-44-54, (+998 97) 830-44-54</h6>
+      <h6><b>Elektron pochta: </b>info@edaraxt.uz</h6>
+      <h6><b>Hisob raqami: </b>20208000104839322001</h6>
+      <h6><b>Bank:</b> Ipoteka-bank ATIB Toshkent shahar Olmazor filiali</h6>
+      <h6><b>Bank kodi: </b>00901</h6>
+      <h6><b>STIR: </b>301551793</h6>
+      <h6><b>IFUT: </b>63110</h6>
+      <h6><b>QQS kodi: </b>326090022300</h6>
+    </div>
+    <div class="col">
+      <h6 style="text-align:left;"><b>Mijoz: </b>Nasriddinov Mo'sajon Olimjon o'g'li</h6>
+      <br>
+      <h6><b>Manzil: </b>150201, O'zbekiston, Farg'ona viloyati, Bag'dod, Samandarak qishlog'i </h6>
+      <h6><b>Telfon: </b>+998909256308</h6>
+      <h6><b>Elektron pochta: </b>nasriddinivmusojon852@gmail.com</h6>
+      <br>
+      <h6><b>JSHSHIR: </b>32312956910018</h6>
+    </div>
+  </div>
+ </div>
+ <div>
+    <h5 class="text-1 text-center">Buyurtma qilingan xizmatlar ro'yhati</h5>
+ </div>
+ <div class="container">
+    <div>
+        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Xizmatlar</th>
+      <th scope="col">Narx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Daraxtlar </td>
+      <td>20 000 x 5 = 100 000</td>
+    </tr>
+    <tr>
+      <td>Parvarishlash yillik </td>
+      <td>5 X 25 000 = 125 000</td>
+    </tr>
+    <tr>
+      <td>Jami to'lov </td>
+      <td>125 000 + 100 000 = 225 000</td>
+    </tr>
+
+  </tbody>
+</table>
+    </div>
+ </div>
+ <div class="text-center mt-4">
+    <h4 class="text-h4">TO'LANMAGAN</h4>
+    <p>Tolov muddati 24.08.2023</p>
+ </div>
+ <div class="text-maker mt-4">
+    <h1>Diqqat! Ushbu hisobni to'lasangiz  <a class="text-a1" href="{% static 'files/offerma.docx' %}">bizning Foydalanish shartlarini</a>qabul qilganingizni bildiradi.</h1>
+    <p>Tolov qilganingiz haqida xabar berishingiz shart emas. Xizmatlar to'lovingiz bizning bank hisobimizga kelib tushganda taqdim etiladi. Xizmat taqdim</p>
+    <p>etilgandan song, biz bu haqida sizning <a class="text-a1" href="#">nasriddinovmusojon852@gmail.com</a> elektron pochta manzilingizga bildirishnoma yuboramiz</p>
+ </div>
+ <div class="mt-5 text-h55">
+    <h5>Tolov usulini tanlang:</h5>
+ </div>
+ <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      <img class="img1" src="{% static 'images/click.jpg'%}" alt="">
+    </label>
+  </div>
+  <div class="container1">
+    <h1 class="texth1">To'lov CLICK to'lov tizimi orqali amalga oshiriladi.</h1>
+    <p class="texth1">To'lov summasi: 450000.00 сум</p>
+    <button type="button" class="btn btn-success"><a class="text-a" href="{% url 'clickPayment' %}">To'lov qilish</a></button>
+  </div>
+  <!--<div class="form-check mt-2">-->
+  <!--  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>-->
+  <!--  <label class="form-check-label" for="flexRadioDefault2">-->
+  <!--    <img class="img1" src="{% static 'images/payme.jpg' %}" alt="">-->
+  <!--  </label>-->
+  <!--</div>-->
+
+  <!--<div class="form-check mt-3">-->
+  <!--  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">-->
+  <!--  <label class="form-check-label" for="flexRadioDefault1">-->
+  <!--    <img class="img2" style="margin-top: -16px;" src="{% static 'images/visa.jpg'%}" alt="">-->
+  <!--  </label>-->
+  <!--</div>-->
+
+  <!--<div class="form-check mt-1">-->
+  <!--  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>-->
+  <!--  <label class="form-check-label" for="flexRadioDefault2">-->
+  <!--      Балансный счет-->
+  <!--  </label>-->
+  <!--</div>-->
+
+
+  </section>
+{% endblock %}

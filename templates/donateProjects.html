@@ -1,0 +1,304 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <section class="wf100 p100 inner-header-tosh" style="background-color:white">
+    <div class="container" style="margin-top: -87px;">
+       <h1>Bugungi kundagi bizning loyihalar</h1>
+    </div>
+ </section>
+ <!--Inner Header End-->
+ <!--Causes Start-->
+ <section class="wf100 p80-40 blog" style="background-color:white">
+    <div class="causes-grid">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/orolimg.jpg' %}" style="height: 278px;" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">Orol uchun 10 ming ta daraxt loyihasi</a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u1.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u2.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u3.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u4.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>21</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>47%</strong> To'plandi</li>
+                         <li><strong>5 740 000</strong> Yig'ildi</li>
+                         <li><strong>9 750 000</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="./donation.html" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/fc2.jpg' %}" style="height: 278px;" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">Bo'ka tumani uchun Mingta ta daraxt</a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u4.jpg' %}" alt=""></li>
+                         <li><span>M</span></li>
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>08</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>30%</strong> To'plandi</li>
+                         <li><strong>638 000</strong> Yig'ildi</li>
+                         <li><strong>2 584 000</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="{% url 'donate'%}" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/fc5.jpg' %}" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">Yunusobod tumanini plastiklardan tozalash</a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u1.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u2.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u3.jpg' %}" alt=""></li>
+                         <li><span>S</span></li>
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>19</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>60%</strong> To'plandi</li>
+                         <li><strong>$3 380 000</strong> Yig'ildi</li>
+                         <li><strong>$5 750 000</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="./donation.html" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/fc7.jpg' %}" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">Chorvoq suv omborini plastiklardan tozalash </a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u1.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u2.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u3.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u4.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>21</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>47%</strong> To'plandi</li>
+                         <li><strong>$638.00</strong> Yig'ildi</li>
+                         <li><strong>$9750.00</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="{% url 'donate' %}" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/onedollar.webp' %}" style="height: 278px;" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">Bir dollar. Bir daraxt. Bir Sayyora Loyihasi
+
+                      </a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u4.jpg' %}" alt=""></li>
+                         <li><span>M</span></li>
+                         <li><img src="{% static 'images/u5.jpg" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>08</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>47%</strong> To'plandi</li>
+                         <li><strong>$638.00</strong> Yig'ildi</li>
+                         <li><strong>$9750.00</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="./donation.html" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+             <div class="col-md-4 col-sm-6">
+                <!--campaign box start-->
+                <div class="campaign-box">
+                   <div class="campaign-thumb"> <a href="#"><i class="fas fa-link"></i></a> <img src="{% static 'images/fc6.jpg' %}" alt=""> </div>
+                   <div class="campaign-txt">
+                      <h5><a href="#">
+                         Hayvonlarning hayotini ta'minlash</a>
+                      </h5>
+                      <ul class="participants">
+                         <li><img src="{% static 'images/u1.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u2.jpg' %}" alt=""></li>
+                         <li><img src="{% static 'images/u3.jpg' %}" alt=""></li>
+                         <li><span>S</span></li>
+                         <li><img src="{% static 'images/u5.jpg' %}" alt=""></li>
+                         <li><span>+16</span></li>
+                         <li><strong><i>19</i> Homiylar</strong></li>
+                      </ul>
+                      <div class="progress">
+                         <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <ul class="funds">
+                         <li><strong>47%</strong> To'plandi</li>
+                         <li><strong>$638.00</strong> Yig'ildi</li>
+                         <li><strong>$9750.00</strong> Muhtojmiz</li>
+                      </ul>
+                   </div>
+                   <a href="./donation.html" class="dbutton">Homiy bo'lish</a>
+                </div>
+                <!--campaign box end-->
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <!--Causes End-->
+
+ <!--<section id="company-planted">-->
+ <!--   <h2 class="company__title">16 628 kompaniya dunyoni o'zgartirmoqda.</h2>-->
+ <!--   <p class="company__subtitle">Ba'zi ajoyib homiylarimizning o'rmonlarini kashf eting.</p>-->
+ <!--   <div class="container-fluid">-->
+ <!--      <div class="row">-->
+ <!--        <div class="col-md-12">-->
+ <!--          <div id="news-slider" class="owl-carousel">-->
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/artel.jpg' %}" alt="">-->
+ <!--                <a href="companyTreeList.html" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--               <h3 class="post-title">-->
+ <!--                 <a href="{% url 'planted-trees'%}">Ekilgan daraxtlar haqida</a>-->
+ <!--               </h3>-->
+ <!--               <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--               <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--               <p class="read-more">So'ngi yangilanish</p>-->
+ <!--               <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--             </div>-->
+ <!--            </div>-->
+
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/yoshlar.jpg' %}" alt="">-->
+ <!--                <a href="daraxtpage.html" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--               <h3 class="post-title">-->
+ <!--                 <a href="#">Ekilgan daraxtlar haqida</a>-->
+ <!--               </h3>-->
+ <!--               <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--               <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--               <p class="read-more">So'ngi yangilanish</p>-->
+ <!--               <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--             </div>-->
+ <!--            </div>-->
+
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/it park.jpg' %}" alt="">-->
+ <!--                <a href="daraxtpage.html" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--               <h3 class="post-title">-->
+ <!--                 <a href="#">Ekilgan daraxtlar haqida</a>-->
+ <!--               </h3>-->
+ <!--               <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--               <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--               <p class="read-more">So'ngi yangilanish</p>-->
+ <!--               <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--             </div>-->
+ <!--            </div>-->
+
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/kadastr.jpg' %}" alt="">-->
+ <!--                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--                <h3 class="post-title">-->
+ <!--                  <a href="#">Ekilgan daraxtlar haqida</a>-->
+ <!--                </h3>-->
+ <!--                <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--                <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--                <p class="read-more">So'ngi yangilanish</p>-->
+ <!--                <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--              </div>-->
+ <!--            </div>-->
+
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/faylitoshkent.jpg' %}" alt="">-->
+ <!--                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--               <h3 class="post-title">-->
+ <!--                 <a href="#">Ekilgan daraxtlar haqida</a>-->
+ <!--               </h3>-->
+ <!--               <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--               <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--               <p class="read-more">So'ngi yangilanish</p>-->
+ <!--               <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--             </div>-->
+ <!--            </div>-->
+
+ <!--            <div class="post-slide">-->
+ <!--              <div class="post-img">-->
+ <!--                <img src="{% static 'images/mediapark.jpg' %}" alt="">-->
+ <!--                <a href="#" class="over-layer"><i class="fa fa-link"></i></a>-->
+ <!--              </div>-->
+ <!--              <div class="post-content">-->
+ <!--               <h3 class="post-title">-->
+ <!--                 <a href="#">Ekilgan daraxtlar haqida</a>-->
+ <!--               </h3>-->
+ <!--               <h6>Daraxtlar soni: 15.428</h6>-->
+ <!--               <h6>Kamaytirilgan CO2: 75.428</h6>-->
+ <!--               <p class="read-more">So'ngi yangilanish</p>-->
+ <!--               <span class="post-date"><i class="fa fa-clock-o"></i>Dekabr 27, 2023</span>-->
+ <!--             </div>-->
+ <!--            </div>-->
+ <!--          </div>-->
+ <!--        </div>-->
+ <!--      </div>-->
+ <!--    </div>-->
+ <!--</section>-->
+
+{% endblock content %}

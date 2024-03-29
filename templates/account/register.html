@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css boshlandi/JOBREED_UCHUN.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<h1>Yangi foydalanuvchilarni ro'yxatdan o'tkazish</h1>
+<p>Ro'yxatdan o'tish uchun quyidagi formani to'ldiring</p>
+<form method="POST"> {% csrf_token %}
+    {{ user_form.as_p }}
+    <button type="submit">Ro'yxatdan o'tish</button>
+</form>
+</body>
+</html>
